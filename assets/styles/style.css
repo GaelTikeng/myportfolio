@@ -1,0 +1,118 @@
+body {
+  background: #e9e3e3;
+}
+
+#body {
+  margin: 30px 500px 0px 250px;
+}
+.tophead h1 {
+  font-size: 30px;
+  font-family: Georgia, serif;
+}
+
+.boxes span {
+  cursor: pointer;
+  border: 10px #8b5757;
+  padding: 10px;
+}
+
+span:hover {
+  background: white;
+
+}
+
+.all {
+  background: rgb(36, 34, 34);
+  color: #fff;
+
+}
+.bare {
+  border: 2.5px solid gray;
+  width: 950px;
+  margin-top: 15px;
+}
+
+#grid-container {
+  margin: 30px 500px 0px 250px;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+.first-pic {
+ 
+  width: 450px;
+}
+
+.first-pic p {
+  width: 450px;
+  line-height: 20px;
+}
+.photo {
+  width: 400px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.photo:hover {
+  opacity: 1;
+ 
+  
+}
+
+.sidenav {
+  background: white;
+  width: 250px;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+
+.pic {
+  width: 120px;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.navcontaner p {
+  margin-left: 8px;
+}
+
+.portfolio {
+  margin: 15px 0 0 5px;
+  font-size: 22px;
+}
+
+.list {
+  height: 18vh;
+  line-height: 5vh;
+}
+.list .fa-solid {
+  margin-right: 12px!important;
+}
+
+a {
+  margin-right: 50px;
+  gap: 80rem;
+  height: 14vh;
+  margin-left: 5px;
+  width: 100%;
+
+}
+
+a:hover {
+  background: #e9e3e3;
+  padding: 10px;
+ 
+  
+}
+
+
+.icons {
+  display: inline;
+  cursor: pointer;
+}
