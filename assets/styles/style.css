@@ -1,64 +1,213 @@
-body {
-  background: #e9e3e3;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-#body {
-  margin: 30px 500px 0px 250px;
+body {
+  background: #f1f1f1 !important;
+  background: "Raleway", sans-serif;
 }
+
+#ALL {
+  margin: 30px 500px 0px 250px;
+  background: #f1f1f1 !important;
+}
+
 .tophead h1 {
   font-size: 30px;
   font-family: Georgia, serif;
 }
 
-.boxes span {
+.boxes {
   cursor: pointer;
-  border: 10px #8b5757;
+  border: 10px #f1f1f1;
   padding: 10px;
+  font-size: 23px;
+  padding: 8px 16px;
+  vertical-align: middle;
+  text-decoration: none;
 }
 
-span:hover {
-  background: white;
+button {
+  margin: 3px;
+  padding: 8px 16px;
+}
 
+button:hover {
+  background: #fff;
+  opacity: 1;
 }
 
 .all {
-  background: rgb(36, 34, 34);
+  background: #242222;
   color: #fff;
-
 }
+
 .bare {
   border: 2.5px solid gray;
-  width: 950px;
-  margin-top: 15px;
+  width: 935px;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 
-#grid-container {
-  margin: 30px 500px 0px 250px;
-}
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
- 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-left: 10px;
 }
 
 .first-pic {
- 
-  width: 450px;
+  background: #fff;
+  width: 300px;
 }
 
 .first-pic p {
-  width: 450px;
-  line-height: 20px;
+  justify-content: space-between;
 }
+
 .photo {
-  width: 400px;
-  height: 250px;
+  width: 300px;
+  height: 220px;
   cursor: pointer;
 }
 
+.text {
+  padding-left: 10px;
+  line-height:25px;
+}
+
 .photo:hover {
-  opacity: 1;
- 
+  opacity: 0.6;
+}
+
+.digit-bar {
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  width: fit-content;
+}
+
+.digit-bar span {
+  margin: 15px;
+  padding: 10px;
+}
+
+.digit-bar i {
+  font-size: 10px;
+}
+
+span:hover {
+  background: #000;
+  color: #fff;
+}
+
+.about {
+  width: 950px;
+  margin: 10px;
+}
+
+.grid2 {
+  width: 500px;
+  height: 300px;
+  display: grid;
+  background: red;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.percentage1 {
+  color: #000 !important;
+  background: #9e9e9e;
+  text-align: center;
+}
+
+.percentage2 {
+  width: 95%;
+  color: #fff !important;
+  background: #616161;
+  padding: 8px 16px !important;
+}
+
+.percentage3 {
+  color: #000 !important;
+  background: #9e9e9e;
+  text-align: center;
+}
+
+.percentage4 {
+  width: 85%;
+  color: #fff !important;
+  background: #616161;
+  padding: 8px 16px !important;
+}
+
+.percentage5 {
+  color: #000 !important;
+  background: #9e9e9e;
+  text-align: center;
+}
+
+.percentage6 {
+  width: 80%;
+  color: #fff !important;
+  background: #616161;
+  padding: 8px 16px !important;
+}
+
+.download {
+  background: #616161;
+  padding: 2px;
+  width: 23%;
+  text-align: center;
+  color: #ffff;
+  cursor: pointer;
+  height: 45px;
+}
+
+.download:hover {
+  background: #9e9e9e;
+  color: #000;
+}
+
+.how-much {
+  margin: 10px;
+
+}
+
+.vertical {
+  border: 5px solid red;
+  width: 200px;
+  height: 500px;
+}
+
+.element1 {
+  color: #fff;
+  background: #000;
+  width: 100%;
+  height: 70px;
+  /* margin: 10px; */
+  
+}
+
+.element {
+  border-bottom: 1px solid #ddd;
+  height: 60px;
+  padding: 16px 0px ;
+}
+
+.button1 {
+  margin-top: 20px;
+}
+
+
+
+ul {
+  list-style: none;
   
 }
 
@@ -72,14 +221,26 @@ span:hover {
 }
 
 .pic {
-  width: 120px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+  
+}
+.navcontaner {
+  margin-left: 10px;
+}
+
+.iterms {
+  margin-left: 10px;
+  width: 100%;
 }
 
 .navcontaner p {
   margin-left: 8px;
+  color: #757575 !important;
 }
 
 .portfolio {
@@ -90,25 +251,24 @@ span:hover {
 .list {
   height: 18vh;
   line-height: 5vh;
+  cursor: pointer;
+  width: 100%;
 }
+
 .list .fa-solid {
   margin-right: 12px!important;
 }
 
-a {
+.list a {
   margin-right: 50px;
   gap: 80rem;
   height: 14vh;
   margin-left: 5px;
   width: 100%;
-
 }
 
-a:hover {
-  background: #e9e3e3;
-  padding: 10px;
- 
-  
+.list a:hover {
+  background: #e9e3e3; 
 }
 
 
