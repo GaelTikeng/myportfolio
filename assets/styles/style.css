@@ -14,14 +14,16 @@ body {
   background: #f1f1f1 !important;
 }
 
+#profile01 {
+  display: none;
+}
+
 .tophead h1 {
   font-size: 30px;
   font-family: Georgia, serif;
 }
 
 .boxes {
-  /* border: 10px #f1f1f1; */
-  padding: 10px;
   font-size: 23px;
   padding: 8px 16px;
   vertical-align: middle;
@@ -57,8 +59,8 @@ button:hover {
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.2rem;
   margin-left: 3px;
   width: 1020px;
@@ -115,14 +117,9 @@ span:hover {
 .about {
   width: 1020px;
   margin: 10px;
+  line-height: 25px;
 }
 
-.grid2 {
-  width: 1020px;
-  height: 311px;
-  display: flex;
-  justify-content: space-between;
-}
 
 img {
   width: 500px;
@@ -169,12 +166,17 @@ img {
 
 .download {
   background: #616161;
-  padding: 2px;
-  width: 23%;
-  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
   color: #ffff;
   cursor: pointer;
-  height: 45px;
+  font-size: 15px;
 }
 
 .download:hover {
@@ -287,7 +289,7 @@ ul {
 }
 
 h3 {
-  margin: 30px 500px 0px 20px;
+  margin: 30px 500px 0 20px;
 }
 
 .contact-bar {
@@ -466,7 +468,7 @@ h3 {
 }
 
 .list .fa-solid {
-  margin-right: 12px!important;
+  margin-right: 12px !important;
 }
 
 .list a {
@@ -478,10 +480,158 @@ h3 {
 }
 
 .list a:hover {
-  background: #e9e3e3; 
+  background:#e9e3e3; 
 }
 
 .icons {
   display: inline;
   cursor: pointer;
+}
+
+.grid2 {
+  width: 1020px;
+  height: 311px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width:700px ) {
+  body {
+    left: 0;
+    flex-basis: 100%;
+    max-width: 700px;
+  }
+
+  .sidenav {
+    display: none;
+    margin: 0;
+  }
+
+  #section {
+    margin: 0;
+  }
+
+  #body h1 {
+    font-size: 20px;
+    margin-top: 150px;
+  }
+
+  #profile01 {
+    border-radius: 10px;
+    width: 30px;
+    height: 10px;
+  }
+
+  .boxes {
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .bare {
+    width: 100%;
+  }
+
+  #grid-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: red;
+    padding-right: auto;
+
+  }
+
+  .text {
+    width: 100% !important;
+  }
+
+  .digit-bar {
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .digit-bar span {
+    padding: 1px;
+  }
+
+  .about {
+    width: 100%;
+    line-height: 25px;
+  }
+
+  .grid2 {
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 100vh;
+    /* background: brown;s */
+    padding-bottom: 500px;
+  }
+  
+  .xeno {
+    background: pink;
+    width: 100%;
+    padding: auto;
+    margin-top: 70%;
+  }
+  .about p {
+    width: 100%;
+    background: gold;
+  }
+
+  .download {
+    /* width: 150px; */
+  }
+
+  .about b {
+    color: green;
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .about h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .progress-bar {
+    width: 100%;  
+  }
+
+  .vertical {
+    display: block;
+  }
+  .contact-bar {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .line {
+    display: none;
+  }
+
+  .personal-info {
+    width: 100ù;
+    color: red;
+    background: blue;
+  }
+
+  .name {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    display: block;
+  }
+
+  .last-bare {
+    width: 100%;
+
+  }
+
 }
